@@ -29,15 +29,18 @@ Ubuntu
 ```python
 nmtui                             # graphic network configuration
 
-# add env variable
-export MY_ENV_VARIABLE=/path/to/somewhere  
+apt-get install nmap
+nmap -sP 192.168.1.0/24           # scans ips on a network
+
+export MY_ENV_VARIABLE=/path/to/somewhere # add env variable
+
+df -BG                            # free space in GBs
 ```
 
 CMake
 -----
 ```cmake
-# Adding custom env variable to path
-
+# Adds custom env variable to path
 if(DEFINED ENV{MY_ENV_VARIABLE})
    set(CMAKE_PREFIX_PATH   ${CMAKE_PREFIX_PATH} $ENV{MY_ENV_VARIABLE})
 endif()
@@ -46,7 +49,7 @@ endif()
 ROS
 ---
 ```python
-# network configuration
+# Network configuration
 export ROS_MASTER_URI=http://MASTER_IP:11311 
 export ROS_IP=MY_IP
 ```
