@@ -9,6 +9,7 @@ Contents
 **2. [`Ubuntu Shell`](#Ubuntu)**  
 **3. [`CMake`](#CMake)**  
 **4. [`ROS`](#ROS)**  
+**5. [`Git`](#Git)**  
 **5. [`Mercurial`](#Mercurial)**
 
 Tmux
@@ -61,6 +62,16 @@ export ROS_IP=MY_IP
 
 catkin_make -DCATKIN_BLACKLIST_PACKAGES="pkg1;pkg2" # ignores pkgs to compile
 catkin_make -DCATKIN_WHITELIST_PACKAGES="pkg1;pkg2" # compiles only these pkgs
+```
+
+Git
+---
+```python
+git reset --hard            # discards local changes (without saving them)
+
+git checkout -b BRANCH      # creates new branch and moves to it
+git push -u origin BRANCH   # pushes branch for the first time
+git branch -d BRANCH        # deletes branch
 ```
 
 Mercurial
