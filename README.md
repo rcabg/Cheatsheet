@@ -10,12 +10,12 @@ Contents
 **3. [`CMake`](#CMake)**  
 **4. [`ROS`](#ROS)**  
 **5. [`Git`](#Git)**  
-**5. [`Mercurial`](#Mercurial)**
+**6. [`Mercurial`](#Mercurial)**
 
 Tmux
 ----
 
-```python
+```bash
 tmux                              # creates session
 tmux new -s my_cool_name          # creates session with custom name
 
@@ -28,7 +28,7 @@ tmux kill-session -t my_cool_name # kills session
 
 Ubuntu Shell
 ------
-```python
+```bash
 nmtui                             # graphic network configuration
 
 apt-get install nmap
@@ -55,7 +55,7 @@ find_package(OpenCV 3.4 REQUIRED
 
 ROS
 ---
-```python
+```bash
 # network configuration
 export ROS_MASTER_URI=http://MASTER_IP:11311 
 export ROS_IP=MY_IP
@@ -66,7 +66,7 @@ catkin_make -DCATKIN_WHITELIST_PACKAGES="pkg1;pkg2" # compiles only these pkgs
 
 Git
 ---
-```python
+```bash
 git reset --hard            # discards local changes (without saving them)
 
 git checkout -b BRANCH      # creates new branch and moves to it
@@ -76,7 +76,7 @@ git branch -d BRANCH        # deletes branch
 
 Mercurial
 ---
-```python
+```bash
 # enables terminal color (at hgrc file)
 [extensions]
 color =
