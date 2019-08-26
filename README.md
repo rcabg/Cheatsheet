@@ -67,11 +67,16 @@ catkin_make -DCATKIN_WHITELIST_PACKAGES="pkg1;pkg2" # compiles only these pkgs
 Git
 ---
 ```bash
-git reset --hard            # discards local changes (without saving them)
+git reset --hard hash                  # discards local changes (without saving them)
+git reset --keep hash                  # discards local changes (saving them)
+git checkout HEAD path/to/file.ext     # restores file to last its last commited version
 
-git checkout -b BRANCH      # creates new branch and moves to it
-git push -u origin BRANCH   # pushes branch for the first time
-git branch -d BRANCH        # deletes branch
+git checkout -b BRANCH                 # creates new branch and moves to it
+git push -u origin BRANCH              # pushes branch for the first time
+git branch -d BRANCH                   # deletes branch
+git push origin --delete OTHER_BRANCH  # deletes remote branch 
+
+git merge OTHER_BRANCH             # merges OTHER_BRANCH to current one
 ```
 
 Mercurial
