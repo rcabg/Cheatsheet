@@ -16,10 +16,10 @@ Contents
 Git
 ---
 ```bash
-git reset --hard hash                  # discards local changes (without saving them)
-git reset --keep hash                  # discards local changes (saving them)
+git reset --hard COMMIT_HASH           # discards local changes (without saving them)
+git reset --keep COMMIT_HASH           # discards local changes (saving them)
 git reset --soft HEAD~1                # discards last commit
-git checkout HEAD path/to/file.ext     # restores file to last its last commited version
+git checkout HEAD path/to/file.ext     # restores file to its last commited version
 
 git checkout -b BRANCH                 # creates new branch and moves to it
 git push -u origin BRANCH              # pushes branch for the first time
