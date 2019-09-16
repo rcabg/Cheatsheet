@@ -10,7 +10,8 @@ Contents
 **3. [`ROS`](#ROS)**  
 **4. [`Ubuntu Shell`](#Ubuntu)**  
 **5. [`CMake`](#CMake)**  
-**6. [`Tmux`](#Tmux)**
+**6. [`Tmux`](#Tmux)**  
+**7. [`Virtualenv`](#Virtualenv)**
 
 
 Git
@@ -88,4 +89,14 @@ tmux attach -t my_cool_name       # attaches to session by name
 (keys) <Control> + b + d          # detaches from current session
 
 tmux kill-session -t my_cool_name # kills session
+```
+
+Virtualenv
+----------
+
+```bash
+virtualenv NAME --python=python3 # creates virtual environment for python3
+
+activate NAME                    # opens virtual environment
+deactivate                       # closes virtual environment
 ```
