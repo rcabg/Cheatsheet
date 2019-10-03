@@ -62,6 +62,10 @@ export MY_ENV_VARIABLE=/path/to/somewhere # adds env variable
 alias MY_ALIAS='command_to_execute'       # adds alias
 
 df -BG                            # free space in GBs
+
+ls | grep "filter_text"           # shows list of files containing filter_text
+
+lscpu                             # info about CPU (cores, architecture...)
 ```
 
 CMake
